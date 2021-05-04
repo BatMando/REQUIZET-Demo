@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inverse_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/wrongAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="@string/wrongans"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/wrongans" />
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/playAgainButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="@string/play_again"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        fancy:fb_ghost = "true"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="2dp"
+        fancy:fb_focusColor="@color/white"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="15dp"
+
+        />
+
+</LinearLayout>

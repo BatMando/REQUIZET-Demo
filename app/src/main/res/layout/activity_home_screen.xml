@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg"
+    tools:context="MMA.triviaquiz.HomeScreen">
+
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="left"
+    android:layout_marginTop="80dp"
+    >
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="2dp"
+        android:text="Let's"
+        android:textColor="#000"
+        android:textSize="14sp"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@id/tQ" />
+    <TextView
+        android:id="@+id/desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="and learn!"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="14sp"
+        fbutton:layout_constraintStart_toEndOf="@id/coloredDesc"
+        fbutton:layout_constraintTop_toBottomOf="@id/tQ" />
+    <TextView
+        android:id="@+id/coloredDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:text="play"
+        android:textStyle="bold"
+        android:textColor="#548ae5"
+        android:textSize="14sp"
+        fbutton:layout_constraintTop_toBottomOf="@id/tQ"
+        fbutton:layout_constraintStart_toEndOf="@id/desc"
+         />
+
+    <TextView
+        android:id="@+id/tQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="52dp"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+
+        android:background="@drawable/exit"
+        android:textColor="#fff"
+        fbutton:layout_constraintBottom_toBottomOf="parent"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></View>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Ripple">
+
+        <ImageButton
+            android:id="@+id/playGame"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/firstplaybuttonfinal"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Ripple">
+
+
+        <ImageButton
+            android:id="@+id/playGame2"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="7dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/secondplaybutton"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_corner"
+
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/ripple3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Ripple">
+
+
+        <ImageButton
+            android:id="@+id/playGame3"
+            android:layout_width="300dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="12dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/thirdplaybutton"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_corner"
+
+            />
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
